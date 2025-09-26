@@ -1,0 +1,19 @@
+# API keys and sensitive data
+.env
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+
+# Jaseci
+.jac_history
+
+# IDE
+.vscode/
