@@ -1,0 +1,3 @@
+[submodule "infofinder"]
+	path = infofinder
+	url = https://github.com/willan5/infofinder
