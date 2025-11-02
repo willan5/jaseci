@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "/home/willan/jaseci/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.extraPaths": [
+        "/home/willan/jaseci/lib/python3.*/site-packages"
+    ],
+    "files.associations": {
+        "*.jac": "python"  // This gives you syntax highlighting
+    }
+}
