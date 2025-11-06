@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information Finder</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .chat-container { border: 1px solid #ccc; border-radius: 10px; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        input[type="text"] { width: 70%; padding: 10px; margin-right: 10px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; }
+        .response { margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h2>What should we help you with?</h2>
+        </div>
+        
+        <div>
+            <input type="text" id="questionInput" placeholder="Ask me anything...">
+            <button onclick="askQuestion()">Search</button>
+        </div>
+        
+        <div id="response" class="response" style="display: none;"></div>
+    </div>
+
+    <script>
+        async function askQuestion() {
+            const question = document.getElementById('questionInput').value;
+            const responseDiv = document.getElementById('response');
+            
+            if (!question) {
+                alert('Please enter a question!');
+                return;
+            }
+
+            responseDiv.style.display = 'block';
+            responseDiv.innerHTML = 'Searching...';
+
+            try {
+                const response = await fetch('http://localhost:8000/api_search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        user_query: question
+                    })
+                });
+
+                const data = await response.json();
+                responseDiv.innerHTML = `<strong>Question:</strong> ${data.user_query}<br><br>
+                                       <strong>Answer:</strong> ${data.formatted_response}`;
+            } catch (error) {
+                responseDiv.innerHTML = 'Error: Could not connect to the server. Make sure JAC serve is running.';
+            }
+        }
+
+        // Allow pressing Enter to submit
+        document.getElementById('questionInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                askQuestion();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+{
+  "littleX": {
+    ".gitignore": "file",
+    "README.md": "file",
+    "start.jac": "file",
+    "littleX_FE": {
+      ".env.example": "file",
+      ".gitignore": "file",
+      "README.md": "file",
+      "components.json": "file",
+      "dockerfile": "file",
+      "next-env.d.ts": "file",
+      "next.config.mjs": "file",
+      "nginx.conf": "file",
+      "package.json": "file",
+      "pnpm-lock.yaml": "file",
+      "postcss.config.mjs": "file",
+      "tailwind.config.ts": "file",
+      "tsconfig.json": "file",
+      "yarn.lock": "file",
+      "_core": {
+        "api-client.ts": "file",
+        "app-configs.ts": "file",
+        "keys.ts": "file",
+        "utils.ts": "file",
+        "hooks": {
+          "useAppNavigation.ts": "file",
+          "useDashboard.ts": "file",
+          "useMaintenanceCheck.ts": "file"
+        }
+      },
+      "store": {
+        "index.ts": "file",
+        "tweetSlice.ts": "file",
+        "useStore.ts": "file",
+        "userSlice.ts": "file"
+      },
+      "public": {
+        "placeholder-logo.png": "file",
+        "placeholder-logo1.png": "file"
+      },
+      "docs": {
+        "architecture.md": "file",
+        "story.md": "file",
+        "customization": {
+          "adding_atoms.md": "file",
+          "colors.md": "file"
+        }
+      },
+      "modules": {
+        "tweet": {
+          "index.ts": "file",
+          "pages": {
+            "TweetPage.tsx": "file"
+          },
+          "schemas": {
+            "index.ts": "file"
+          },
+          "hooks": {
+            "index.ts": "file",
+            "useCreateTweet.ts": "file"
+          },
+          "utils": {
+            "index.ts": "file"
+          },
+          "actions": {
+            "index.ts": "file"
+          },
+          "services": {
+            "index.ts": "file"
+          }
+        },
+        "settings": {
+          "pages": {
+            "SettingsPage.tsx": "file"
+          }
+        },
+        "users": {
+          "auth-service.ts": "file",
+          "userActions.ts": "file",
+          "pages": {
+            "login-page.tsx": "file",
+            "profile-page.tsx": "file",
+            "register-page.tsx": "file"
+          },
+          "schemas": {
+            "login-schema.ts": "file",
+            "register-schema.ts": "file"
+          },
+          "hooks": {
+            "use-auth.ts": "file",
+            "use-login-form.ts": "file",
+            "use-profile.ts": "file",
+            "use-register-form.ts": "file"
+          }
+        }
+      },
+      "app": {
+        "globals.css": "file",
+        "layout.tsx": "file",
+        "page.tsx": "file",
+        "providers.tsx": "file",
+        "auth": {
+          "layout.tsx": "file",
+          "register": {
+            "page.tsx": "file"
+          },
+          "login": {
+            "page.tsx": "file"
+          }
+        },
+        "settings": {
+          "page.tsx": "file"
+        }
+      },
+      "styles": {
+        "globals.css": "file"
+      },
+      "ds": {
+        "theme-provider.tsx": "file",
+        "use-app-theme.ts": "file",
+        "molecules": {
+          "auth-left-col.tsx": "file",
+          "check-profile-dialog.tsx": "file",
+          "edit-tweet-dialog.tsx": "file",
+          "left-tweet-sidebar.tsx": "file",
+          "mobile-components.tsx": "file",
+          "right-tweet-sidebar.tsx": "file",
+          "setting-main.tsx": "file",
+          "tweet-main.tsx": "file"
+        },
+        "templates": {
+          "cenetered-template.tsx": "file",
+          "dashboard-template.tsx": "file",
+          "grid-template.tsx": "file",
+          "header-sidebar-template.tsx": "file",
+          "responsive-dashboard-template.tsx": "file",
+          "stacked-template.tsx": "file",
+          "two-column-template.tsx": "file"
+        },
+        "atoms": {
+          "app-logo.tsx": "file",
+          "avatar.tsx": "file",
+          "badge.test.tsx": "file",
+          "badge.tsx": "file",
+          "button.test.tsx": "file",
+          "button.tsx": "file",
+          "calendar.tsx": "file",
+          "card.test.tsx": "file",
+          "card.tsx": "file",
+          "checkbox.test.tsx": "file",
+          "checkbox.tsx": "file",
+          "collapsible.tsx": "file",
+          "dialog.tsx": "file",
+          "dropdown-menu.tsx": "file",
+          "form.tsx": "file",
+          "input.test.tsx": "file",
+          "input.tsx": "file",
+          "label.tsx": "file",
+          "popover.tsx": "file",
+          "select.test.tsx": "file",
+          "select.tsx": "file",
+          "sheet.tsx": "file",
+          "tabs.tsx": "file",
+          "textarea.test.tsx": "file",
+          "textarea.tsx": "file",
+          "toast.tsx": "file",
+          "toaster.tsx": "file",
+          "tooltip.tsx": "file",
+          "use-toast.tsx": "file",
+          "hooks": {
+            "use-toast.ts": "file"
+          }
+        },
+        "wrappers": {
+          "prtoected-auth.tsx": "file"
+        },
+        "organisms": {
+          "login-form.tsx": "file",
+          "profile-section.tsx": "file",
+          "register-form.tsx": "file",
+          "tweet-card.tsx": "file",
+          "tweet-form.tsx": "file",
+          "tweet-list.tsx": "file"
+        }
+      },
+      "nodes": {
+        "tweet-node.ts": "file",
+        "user-node.ts": "file"
+      }
+    },
+    "Documentation": {
+      "Internals.md": "file",
+      "LittleX_api_doc.pdf": "file",
+      "Old_doc.md": "file",
+      "images": {
+        "Architecture.png": "file",
+        "Architecture_v1.png": "file",
+        "draft.png": "file",
+        "image.png": "file"
+      },
+      "Draft_versions": {
+        "littleX_v1.jac": "file",
+        "littleX_v11.jac": "file",
+        "littleX_v2.jac": "file",
+        "littleX_v21.jac": "file",
+        "littleX_v2_1.jac": "file",
+        "littleX_v2_11.jac": "file",
+        "littleX_v2_2.jac": "file",
+        "littleX_v3.jac": "file"
+      }
+    },
+    "littleX_BE": {
+      ".env.example": "file",
+      ".gitignore": "file",
+      "README.md": "file",
+      "dockerfile": "file",
+      "kind-config.yaml": "file",
+      "littleX.impl.jac": "file",
+      "littleX.jac": "file",
+      "littleX.test.jac": "file",
+      "requirements.txt": "file",
+      "_archive": {
+        "littleX_full.jac": "file",
+        "littleX_full_v2.jac": "file",
+        "littleX_llama.jac": "file",
+        "littleX_mini.jac": "file",
+        "littleX_openai.jac": "file",
+        "littleX_version1.jac": "file"
+      }
+    }
+  }
+}
